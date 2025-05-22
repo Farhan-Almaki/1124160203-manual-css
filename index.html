@@ -32,7 +32,7 @@
       border-radius: 4px;
     }
 
-      .inline-box {
+    .inline-box {
       display: inline-block;
       width: 100px;
       padding: 10px;
@@ -44,7 +44,7 @@
       font-weight: bold;
     }
 
-        .flex-container {
+    .flex-container {
       display: flex;
       gap: 10px;
       background-color: #eceff1;
@@ -62,7 +62,7 @@
       border-radius: 5px;
     }
 
-        .grid-container {
+    .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
@@ -79,7 +79,7 @@
       border-radius: 4px;
     }
 
-        .responsive-box {
+    .responsive-box {
       background-color: #b2dfdb;
       padding: 20px;
       border-radius: 5px;
@@ -88,12 +88,24 @@
       transition: background-color 0.5s ease;
     }
 
-        @media (max-width: 600px) {
+    @media (max-width: 600px) {
       .responsive-box {
         background-color: #ff8a65;
       }
     }
 
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: #ba68c8;
+      margin-top: 20px;
+      transition: transform 0.5s ease;
+      border-radius: 10px;
+    }
+
+    .animated-box:hover {
+      transform: rotate(45deg) scale(1.2);
+    }
 
   </style>
 </head>
