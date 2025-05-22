@@ -130,6 +130,23 @@
         background-color: #81c784;
       }
     }
+
+    .box-shake {
+      width: 100px;
+      height: 100px;
+      background-color: #ff7043;
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: shake 0.5s infinite;
+    }
+
+    @keyframes shake {
+      0%   { transform: translateX(0); }
+      25%  { transform: translateX(-5px); }
+      50%  { transform: translateX(5px); }
+      75%  { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
   </style>
 </head>
 <body>
@@ -174,5 +191,9 @@
 
     <h2>8. Bounce animation</h2>
   <div class="box-bounce-color"></div>
+
+    <h2>9. Transformasi dan Animasi: Shake</h2>
+  <div class="box-shake"></div>
+
 </body>
 </html>
