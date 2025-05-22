@@ -107,6 +107,29 @@
       transform: rotate(45deg) scale(1.2);
     }
 
+    .box-bounce-color {
+      width: 100px;
+      height: 100px;
+      background-color: #ba68c8;
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: bounceColor 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes bounceColor {
+      0% {
+        transform: translateY(0);
+        background-color: #ba68c8;
+      }
+      50% {
+        transform: translateY(-20px);
+        background-color: #64b5f6;
+      }
+      100% {
+        transform: translateY(0);
+        background-color: #81c784;
+      }
+    }
   </style>
 </head>
 <body>
@@ -149,5 +172,7 @@
     <h2>7. Transformasi dan Animasi</h2>
   <div class="animated-box"></div>
 
+    <h2>8. Bounce animation</h2>
+  <div class="box-bounce-color"></div>
 </body>
 </html>
