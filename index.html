@@ -147,6 +147,21 @@
       75%  { transform: translateX(-5px); }
       100% { transform: translateX(0); }
     }
+
+    .box-fade {
+      width: 100px;
+      height: 100px;
+      background-color: #7986cb;
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: fadeInOut 2s infinite ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+      0%   { opacity: 0; }
+      50%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
   </style>
 </head>
 <body>
@@ -195,5 +210,7 @@
     <h2>9. Transformasi dan Animasi: Shake</h2>
   <div class="box-shake"></div>
 
+    <h2>10. Transformasi dan Animasi: Fade In/Out</h2>
+  <div class="box-fade"></div>
 </body>
 </html>
