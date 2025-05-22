@@ -62,7 +62,23 @@
       border-radius: 5px;
     }
 
-    
+        .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #f3e5f5;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: #ce93d8;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #ab47bc;
+      border-radius: 4px;
+    }
+
 
   </style>
 </head>
@@ -89,6 +105,13 @@
     <div class="flex-item">Flex 1</div>
     <div class="flex-item">Flex 2</div>
     <div class="flex-item">Flex 3</div>
+  </div>
+
+    <h2>5. CSS Grid</h2>
+  <div class="grid-container">
+    <div class="grid-item">Grid 1</div>
+    <div class="grid-item">Grid 2</div>
+    <div class="grid-item">Grid 3</div>
   </div>
 
 
